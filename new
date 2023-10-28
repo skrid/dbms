@@ -1,0 +1,92 @@
+create database Roadways_Management_System;
+
+use Roadways_Management_System;
+
+
+#BUS_66
+create table Bus_66 (BusNo varchar(10),source varchar(20),destination varchar(20),coachtype varchar(20));
+
+desc Bus_66;
+
+insert into Bus_66 values ("TN 201","Chennai","Tirunelveli","AC-sleeper");
+
+insert into Bus_66 values ("TN 202","Chennai","Erode","AC-sleeper");
+
+insert into Bus_66 values ("TN 203","Chennai","Thanjavur","seater");
+
+insert into Bus_66 values ("TN104","Chennai","Karur","seater");
+
+insert into Bus_66 values ("TN105","Chennai","Erode","AC-sleeper");
+
+select * from Bus_66;
+
+
+
+
+# Ticket_66
+create table Ticket_66 (TicketNO varchar(10),DOJ date,address varchar(30),contactno varchar(10),BusNo varchar(10),seatno int,source varchar(20),destination varchar(20))
+
+desc Ticket_66
+
+insert into Ticket_66 values ("1001","2023-12-13","Urapakkam","9142015701","TN 201",01,"Chennai","Tirunelveli");
+
+insert into Ticket_66 values ("1002","2023-12-10","Guindy","9142015702","TN 202",02,"Chennai","Erode");
+
+insert into Ticket_66 values ("1003","2023-12-11","Egmore","9142015703","TN 203",03,"Chennai","Thanjavur");
+
+insert into Ticket_66 values ("1004","2023-11-29","T Nagar","9142015704","TN 204",04,"Chennai","Karur");
+
+insert into Ticket_66 values ("1005","2023-11-31","Porur","9142015704","TN 205",05,"Chennai","Erode");
+
+select * fromt Ticket_66
+
+
+
+
+#Passenger_66;
+create table Passenger_66 (PassportID varchar(20),TicketNO varchar(10),name varchar(30),contactno varchar(10),age int,sex char,address varchar(30));
+
+desc Passenger_66;
+
+ insert into Passenger_66 values ("101","1001","kishore","9142015701",21,'M',"Urapakkam");
+
+insert into Passenger_66 values ("102","1002","Ramesh","9142015702",33,'M',"Guindy");
+
+insert into Passenger_66 values ("103","1003","saran","9142015703",40,'M',"Egmore");
+
+insert into Passenger_66 values ("104","1004","Ahamed","9142015704",48,'M',"T Nagar");
+
+insert into Passenger_66 values ("105","1005","Sathish","9142015705",28,'M',"Porur");
+
+select * from Passenger_66;
+
+
+
+
+#Reservation_66
+
+ create table Reservation_66 (PNRNO varchar(10),DOJ date,noofseats int,address varchar(30),contactno varchar(30),BusNo varchar(10),seatno int);
+
+desc Reservation_66;
+
+insert into Reservation_66 values("201001","2023-12-13",30,"Urapakkam","9142015701","TN 201",1);
+
+insert into Reservation_66 values("201002","2023-12-10",25,"Guindy","9142015702","TN 202",2);
+
+insert into Reservation_66 values("201003","2023-12-11",27,"Egmore","9142015703","TN 203",3);
+
+insert into Reservation_66 values("201004","2023-11-29",28,"T Nagar","9142015704","TN 204",4);
+
+insert into Reservation_66 values("201005","2023-11-29",30,"Porur","9142015705","TN 205",5);
+
+select * from Passenger_66;
+
+
+#Cancellation_66;
+ create table Cancellation_66 (PNRNO varchar(10),DOJ date,seatno int,contactno varchar(10),status varchar(20));
+
+desc Cancellation_66;
+
+insert into Cancellation_66 values ("201005","2023-11-29",5,"9142015705","Cancelled");
+
+select * from Cancellation_66;
