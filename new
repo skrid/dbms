@@ -8,15 +8,15 @@ create table Bus_66 (BusNo varchar(10),source varchar(20),destination varchar(20
 
 desc Bus_66;
 
-insert into Bus_66 values ("TN 201","Chennai","Tirunelveli","AC-sleeper");
+insert into Bus_66 values ("TN 201","Chennai","Tirunelveli","Seater");
 
-insert into Bus_66 values ("TN 202","Chennai","Erode","AC-sleeper");
+insert into Bus_66 values ("TN 202","Chennai","Erode","Seater");
 
-insert into Bus_66 values ("TN 203","Chennai","Thanjavur","seater");
+insert into Bus_66 values ("TN 203","Chennai","Thanjavur","Sleeper");
 
-insert into Bus_66 values ("TN104","Chennai","Karur","seater");
+insert into Bus_66 values ("TN104","Chennai","Karur","Sleeper");
 
-insert into Bus_66 values ("TN105","Chennai","Erode","AC-sleeper");
+insert into Bus_66 values ("TN105","Chennai","Erode","Seater");
 
 select * from Bus_66;
 
@@ -24,9 +24,9 @@ select * from Bus_66;
 
 
 # Ticket_66
-create table Ticket_66 (TicketNO varchar(10),DOJ date,address varchar(30),contactno varchar(10),BusNo varchar(10),seatno int,source varchar(20),destination varchar(20))
+create table Ticket_66 (TicketNO varchar(10),DOJ date,address varchar(30),contactno varchar(10),BusNo varchar(10),seatno int,source varchar(20),destination varchar(20));
 
-desc Ticket_66
+desc Ticket_66;
 
 insert into Ticket_66 values ("1001","2023-12-13","Urapakkam","9142015701","TN 201",01,"Chennai","Tirunelveli");
 
@@ -36,7 +36,7 @@ insert into Ticket_66 values ("1003","2023-12-11","Egmore","9142015703","TN 203"
 
 insert into Ticket_66 values ("1004","2023-11-29","T Nagar","9142015704","TN 204",04,"Chennai","Karur");
 
-insert into Ticket_66 values ("1005","2023-11-31","Porur","9142015704","TN 205",05,"Chennai","Erode");
+insert into Ticket_66 values ("1005","2023-11-30","Porur","9142015704","TN 205",05,"Chennai","Erode");
 
 select * fromt Ticket_66
 
@@ -87,6 +87,6 @@ select * from Passenger_66;
 
 desc Cancellation_66;
 
-insert into Cancellation_66 values ("201005","2023-11-29",5,"9142015705","Cancelled");
+insert into Cancellation_66 values ("201004","2023-11-29",5,"91420157054","Cancelled");
 
 select * from Cancellation_66;
