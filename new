@@ -79,7 +79,7 @@ insert into Reservation_66 values("201004","2023-11-29",28,"T Nagar","9142015704
 
 insert into Reservation_66 values("201005","2023-11-29",30,"Porur","9142015705","TN 205",5);
 
-select * from Passenger_66;
+select * from Reservation_66;
 
 
 #Cancellation_66;
