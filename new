@@ -38,21 +38,21 @@ insert into Ticket_66 values ("1004","2023-11-29","T Nagar","9142015704","TN 204
 
 insert into Ticket_66 values ("1005","2023-11-30","Porur","9142015704","TN 205",05,"Chennai","Erode");
 
-select * fromt Ticket_66
+select * from Ticket_66;
 
 
 
 
 #Passenger_66;
-create table Passenger_66 (PassportID varchar(20),TicketNO varchar(10),name varchar(30),contactno varchar(10),age int,sex char,address varchar(30));
+create table Passenger_66 (PassportID varchar(20),TicketNO varchar(10),Name varchar(30),ContactNo varchar(10),Age int,sex char, ddress varchar(30));
 
 desc Passenger_66;
 
- insert into Passenger_66 values ("101","1001","kishore","9142015701",21,'M',"Urapakkam");
+ insert into Passenger_66 values ("101","1001","Raghu","9142015701",21,'M',"Urapakkam");
 
 insert into Passenger_66 values ("102","1002","Ramesh","9142015702",33,'M',"Guindy");
 
-insert into Passenger_66 values ("103","1003","saran","9142015703",40,'M',"Egmore");
+insert into Passenger_66 values ("103","1003","Vaseem","9142015703",40,'M',"Egmore");
 
 insert into Passenger_66 values ("104","1004","Ahamed","9142015704",48,'M',"T Nagar");
 
@@ -87,6 +87,6 @@ select * from Passenger_66;
 
 desc Cancellation_66;
 
-insert into Cancellation_66 values ("201004","2023-11-29",5,"91420157054","Cancelled");
+insert into Cancellation_66 values ("201004","2023-11-29",4,"9142015704","Cancelled");
 
 select * from Cancellation_66;
